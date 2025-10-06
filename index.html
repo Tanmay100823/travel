@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Travel Explorer | Home</title>
+  <link rel="stylesheet" href="style.css">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Story+Script&display=swap');
+</style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="hero">
+    <h1>Travel Explorer</h1>
+    <p>Your journey begins here</p>
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book Now Button</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+
+    .book-now-btn {
+      padding: 15px 30px;
+      font-size: 18px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .book-now-btn:hover {
+      background-color: #218838;
+    }
+
+    .booking-form {
+      display: none;
+      margin-top: 30px;
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+    }
+
+    .booking-form input[type="text"],
+    .booking-form input[type="email"],
+    .booking-form input[type="tel"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      box-sizing: border-box;
+    }
+
+    .booking-form input[type="submit"] {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .booking-form input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <button class="book-now-btn" onclick="showForm()">Book Now</button>
+
+  <div class="booking-form" id="bookingForm">
+    <h2>Fill in your details</h2>
+    <form onsubmit="submitForm(event)">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+  <script>
+    function showForm() {
+      document.getElementById("bookingForm").style.display = "block";
+    }
+
+    function submitForm(event) {
+      event.preventDefault(); // prevent actual form submission
+      alert("Thank you! Your booking request has been submitted.");
+      // You can now send this data to a backend or save it somewhere
+    }
+  </script>
+
+</body>
+</html>
+
+   
+</style>
+  </div>
+  <section>
+    <h2>Featured Destinations</h2>
+    <div class="featured">
+      <div class="card">
+        <img src="Paris.jpg" alt="Paris">
+         <h3>Paris</h3>
+        <p>The city of lights and love awaits with its iconic Eiffel Tower.</p>
+        <a href="https://example.com" class="explore-button" target="_blank">Explore More</a>
+
+ </script>
+
+       </div>
+    
+
+      <div class="card">
+        <img src="Maldives.jpg" alt="Beach">
+        <h3>Maldives</h3>
+        <p>Relax on pristine beaches with crystal-clear turquoise waters.</p>
+       <a href="https://example.com" class="explore-button" target="_blank">Explore More</a>
+      </div>
+
+      <div class="card">
+        <img src="SwissAlps.jpg" alt="Mountains">
+        <h3>Swiss Alps</h3>
+        <p>Adventure and breathtaking landscapes in the heart of Europe.</p>
+        <a href="https://example.com" class="explore-button" target="_blank">Explore More</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Travel Explorer | Mihir Soni</p>
+  </footer>
+</body>
+</html>
